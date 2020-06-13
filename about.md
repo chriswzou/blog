@@ -3,7 +3,7 @@ layout: page
 title: about me
 ---
 
-<img src="/assets/IMG_2604.JPG"
+<img src="https://chriswzou.github.io/assets/img_2604.jpg"
      alt="Decent Picture of Myself"
      style="width: 30%;" />
 
