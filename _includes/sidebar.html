@@ -1,15 +1,18 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
+  <img src="/assets/IMG_2604.jpg" alt="picture of me" id="sidebar-pic">
+  <p id="sidebar-name">CHRISTOPHER ZOU</p>
+  <div id="site-description">
     <p>{{ site.description }}</p>
   </div>
 
+
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
+    <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">home</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -25,14 +28,17 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <!--<a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
+    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>-->
+    <!--
+      Deprecated site version tag.
+      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    -->
   </nav>
 
   <div class="sidebar-item">
     <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+      &copy; {{ site.time | date: '%Y' }} Christopher Zou. Made with Jekyll.
     </p>
   </div>
 </div>

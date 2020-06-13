@@ -22,6 +22,7 @@
  * Sidebar
  * Slide effect
  * Posts and pages
+ * Timeline
  * Pagination
  * Reverse layout
  * Themes
@@ -96,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 .masthead {
   padding-top:    1rem;
   padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #eee;
 }
 .masthead-title {
@@ -175,26 +176,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Sidebar nav */
 .sidebar-nav {
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  /*border-bottom: 1px solid rgba(255,255,255,.1)*/;
 }
 .sidebar-nav-item {
   display: block;
-  padding: .5rem 1rem;
-  border-top: 1px solid rgba(255,255,255,.1);
+  padding: .5rem; /*1rem*/;
+  /*border-top: 1px solid rgba(255,255,255,.1)*/;
 }
 .sidebar-nav-item.active,
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
-  text-decoration: none;
-  background-color: rgba(255,255,255,.1);
+  /*text-decoration: underline;*/
+  /*background-color: rgba(255,255,255,.1);*/
   border-color: transparent;
 }
 
 @media (min-width: 48em) {
   .sidebar-item {
-    padding: 1.5rem;
+    text-align: center;
+    /*padding: 1.5rem;*/
   }
   .sidebar-nav-item {
+    text-align: center;
     padding-left:  1.5rem;
     padding-right: 1.5rem;
   }
@@ -254,6 +257,32 @@ a.sidebar-nav-item:focus {
   .sidebar-toggle {
     display: none;
   }
+}
+
+#sidebar-pic {
+  border-radius: 50%;
+  width: 50%;
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+#sidebar-name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff
+}
+
+#site-description {
+  display: block;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-align: center;
+  margin-top: 0px;
+  color: #ffffff
 }
 
 /* Slide effect

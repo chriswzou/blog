@@ -1,29 +1,44 @@
 ---
 layout: page
-title: About
+title: about me
 ---
 
+<img src="/assets/IMG_2604.JPG"
+     alt="Decent Picture of Myself"
+     style="width: 30%;" />
+
+
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Hey there! I'm Chris Zou, a junior at <a href="https://berkeley.edu">UC Berkeley</a> studying Computer Science and Molecular Biology. I'm currently building a MongoDB integration for <a href="https://github.com/rdkit">rdkit</a>, an open-source chemoinformatics platform, and serving as a department tutor for <a href="https://cs61bl.org/su20/">CS61BL: Data Structures</a>.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+More generally, I want to improve lives with technology. While leading projects with [Neurotech@Berkeley](https://neurotech.berkeley.edu) and [Phoenix Consulting Group](https://phoenix.berkeley.edu), I got exposure to digital health products, data-driven health policy, brain computer-interfacing, and using holography for imaging. Especially in healthcare, there's limitless possibility. We're like the Seahawks at the 1-yard line. All we have to do is make the right play.
 
-There are currently two themes built on Poole:
+Outside of tech and healthcare, I've spent some time selling an [app](https://choco.com) to chefs in Chicago and [advocating for access](http://www.peerprivatelessons.org/) to music lessons. These days, I spend a lot of time running and writing, some of the latter on this site.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+Whether about tech, healthcare, a job, or interesting ideas, I'd love to get in touch with you at [cwzou@berkeley.edu](mailto: cwzou@berkeley.edu). More information below:
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## Links
+* [Resume]
+* [Github](https://github.com/chriswzou)
+* [Writing Portfolio]
 
-## Setup
+## Experience
 
-Some fun facts about the setup of this project include:
+## Relevant Coursework
+Spring 2020:
+* Discrete Mathematics and Probability Theory
+* Organic Chemistry II
+* Designing Information Systems II
+* General Biology and Laboratory
 
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+Fall 2019:
+* Data Structures
+* Organic Chemistry I
+* Designing Information Systems I
 
-Thanks for reading!
+Spring 2019:
+* Molecular Biology Laboratory
+* Structure of Computer Programs
+* General Chemistry and Laboratory
