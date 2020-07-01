@@ -1,11 +1,11 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <img src="https://chriswzou.github.io/assets/img_2604.jpg" alt="picture of me" id="sidebar-pic">
-  <p id="sidebar-name">CHRISTOPHER ZOU</p>
+  <!--<img src="https://chriswzou.github.io/assets/img_2604.jpg" alt="picture of me" id="sidebar-pic">-->
+  <p id="sidebar-name">Christopher Zou</p>
   <div id="site-description">
     <p>{{ site.description }}</p>
   </div>
@@ -34,6 +34,7 @@
       Deprecated site version tag.
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     -->
+    <a class="sidebar-nav-item" href="{{ '/' | absolute_url}}/#get-in-touch">contact</a>
   </nav>
 
   <div class="sidebar-item">

@@ -120,6 +120,10 @@ ul, ol, dl {
   margin-bottom: 1rem;
 }
 
+.spaced-list {
+  margin-bottom: 1rem;
+}
+
 dt {
   font-weight: bold;
 }

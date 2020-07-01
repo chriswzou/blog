@@ -3,35 +3,57 @@ layout: default
 title: home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<img src="https://chriswzou.github.io/assets/img_2604.jpg"
+     alt="Decent Picture of Myself"
+     style="width: 30%;" />
+<h1 style="margin-top: 1em; margin-bottom: 1em;">
+  <span style="border-bottom: 1px solid;">
+    Hey there! I'm Chris...
+  </span>
+</h1>
+<p>
+  ...a junior at <a href="https://berkeley.edu">UC Berkeley</a> studying Computer Science and Molecular Biology. This summer, I'm building
+  a MongoDB integration for <a href="https://github.com/rdkit">rdkit</a>,
+  an open-source chemoinformatics platform, as part of
+  <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a>.
+  I'm also helping to teach
+  <a href="https://cs61bl.org/su20/">CS61BL: Data Structures</a>.
+</p>
+<p>
+  My larger aim is to improve healthcare with technology. The ongoing COVID-19 pandemic has made it abundantly clear
+  that the healthcare sector is underfunded and underprepared, whether financially, logistically, or medically.
+  The pandemic has also made clear that new technology can drastically improve resource allocation and patient outcomes.
+  More generally, the ethos of the technology sector rewards reasonable risk and encourages disruption, things
+  twice needed in an overburdened, conservative market.
+</p>
+<p>
+  I'm still figuring out how where I stand in this picture, whether it's identifying investments, working in a lab, or
+  doing product development. Perhaps I'll end up doing something outside of healthcare—there's a lot of other good to do.
+  For now though, I'm learning, working, eating, sleeping, running a lot, and writing a little. You'll find some of the last on this site.
+<h2 id="get-in-touch" style="margin-top: 1em; margin-bottom: 1em">
+  <span style="border-bottom: 1px solid;">Let's Get in Touch!
+  </span>
+</h2>
+<p>For most communication, the best way to reach me is via email at cwzou [at] berkeley.edu.</p>
+<ul>
+  <li class="spaced-list">Otherwise, <a href="https://github.com/chriswzou">GitHub</a> holds my software projects.</li>
+  <li class="spaced-list">I'm occasionally on <a href="https://www.linkedin.com/in/chriswzou/">LinkedIn.</a></li>
+  <li class="spaced-list">Neurotech@Berkeley's <a href="https://medium.com/@ucbneurotech">Medium</a> features some
+    of my past work. It's also well worth a shoutout.</li>
+</ul>
+<!--<h2 style="margin-top: 1em; margin-bottom: 1em">
+  <span style="border-bottom: 1px solid;">What I've Done So Far
+  </span>
+</h2>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+    While leading projects with <a href="https://neurotech.berkeley.edu">Neurotech@Berkeley</a> and
+    <a href="https://phoenix.berkeley.edu">Phoenix Consulting Group</a>, I got exposure to digital health products, data-driven health policy, brain computer-interfacing, and using holography for imaging.
+    Especially in healthcare, there's limitless possibility. We're like the Seahawks at the 1-yard line.
+    All we have to do is make the right play.
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+    <p>
+      Outside of tech and healthcare, I've spent some time selling an <a href="https://choco.com">app</a>
+      to chefs in Chicago and <a href="http://www.peerprivatelessons.org/">advocating for access</a>
+      to music lessons. These days, I spend a lot of time running and writing, some of the latter on this site.
+    </p>-->

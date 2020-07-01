@@ -1,11 +1,12 @@
 # Setup
-title:               Christopher Zou's Blog
+title:               Christopher Zou
 tagline:             student at UC Berkeley
 description:         a site for blogging, teaching, my portfolio, and messing around
 url:
 baseurl:             ''
 paginate:            5
 permalink:           pretty
+paginate_path:       /posts/page:num/
 
 # About/contact
 author:
