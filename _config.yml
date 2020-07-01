@@ -1,7 +1,7 @@
 # Setup
 title:               Christopher Zou
 tagline:             student at UC Berkeley
-description:         a site for blogging, teaching, my portfolio, and messing around
+description:         a site for blogging, teaching, a portfolio, and thoughts given structure
 url:
 baseurl:             ''
 paginate:            5

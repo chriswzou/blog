@@ -280,6 +280,7 @@ a.sidebar-nav-item:focus {
 #site-description {
   display: block;
   padding-left: 1rem;
+  padding-right: 1rem;
   margin-top: 0px;
   color: #ffffff
 }
