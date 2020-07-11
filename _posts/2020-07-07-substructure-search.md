@@ -56,7 +56,7 @@ def SubSearchNaive(pattern, db):
             results.append([molDoc['smiles']])
     return results
 ```
-How performant is this approach? Since molecules are generally represented as graphs, the substructure check for each molecule is an instance of the subgraph isomorphism problem. Unfortunately, this problem is NP-complete. While the molecule graphs we're talking about won't usually exhibit worst-case time, benchmarks by Daylight Chemical Information Systems find that they still run on the order of \\(O(N^2)\\) or \\(O(N^3)\\). This would be incredibly time intensive for larger or more connected molecules, making this method slow for identifying lead compounds.
+How performant is this approach? Since molecules are generally represented as graphs, the substructure check for each molecule is an instance of the subgraph isomorphism problem. Unfortunately, this problem is NP-complete. While the molecule graphs we're talking about won't usually exhibit worst-case time, benchmarks by Daylight Chemical Information Systems find that they still run on the order of $O(N^2)$ or $O(N^3)$. This would be incredibly time intensive for larger or more connected molecules, making this method slow for identifying lead compounds.
 
 Luckily, NP-completeness doesn't restrict how quickly we can check a solution for correctness. In fact, we can determine that a molecule probably does not contain the pattern much more quickly than vice versa. And if we can screen out non-matching molecules before beginning to check `HasSubstructMatch` on those remaining, we can avoid a large number of expensive calls.
 
