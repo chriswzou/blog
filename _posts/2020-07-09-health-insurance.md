@@ -7,7 +7,7 @@ American healthcare is *really* expensive. In 2017, we paid [$10739 per person](
 
 The reasons for this expense aren't easy to pin down. Even though it's not hard to say that drugs, physicians, and hospitals are all more expensive, their costs have been driven up by some combination of a risk-aversion, inefficient payer networks, and a free market. Good policy solutions are even harder to come by.
 
-I'll probably write more about costs in future blog posts, but here I'll focus on the system that's evolved in response: health insurance. As always, I'm motivated in part because I want to understand more about his system. I hope that this post, which will cover how insurance works and common plans, will lend a little bit of clarity to your health as well.
+I'll probably write more about costs in future blog posts, but here I'll focus on the system that's evolved in response: health insurance. I hope that this post, which will cover how insurance works and common plans, will lend a little bit of clarity to your health as well.
 
 <p class="message">Note: because insurance concepts are wordy, the market's come up with a lot of words to abstract complexity. Check out the last section for a list of useful vocab words.</p>
 
@@ -73,6 +73,7 @@ But enough with the speculation for now; I anticipate exploring this topic in si
 <p style="color: gray; font-size: 1rem;">Christopher Zou, Ann Arbor</p>
 </div>
 ## Further Reading
+
 * [A Brookings Report on Healthcare](https://www.brookings.edu/research/a-dozen-facts-about-the-economics-of-the-u-s-health-care-system/)
 * [Survey of Health Systems Globally](http://web.stanford.edu/class/e297c/poverty_prejudice/soc_sec/health.htm)
 * [DHHS on Healthcare Spending](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/NationalHealthExpendData/Downloads/highlights.pdf)
