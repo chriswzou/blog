@@ -1,3 +1,8 @@
+---
+layout: post
+title: What's up with healthcare law?
+---
+
 ## Ok, What's Up With Healthcare Law?
 Federal government policy on healthcare is contentious and has been since the 1960s, when Lyndon B. Johnson passed Medicare and Medicaid as part of his Great Society reforms. The situation became even more of a snafu in 2010, when the Obama Administration passed the Affordable Care Act.
 
