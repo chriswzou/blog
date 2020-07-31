@@ -81,7 +81,7 @@ But enough with the speculation for now; I anticipate exploring this topic in si
 ## Reference: Vocabulary
 Here's a glossary of all of the sawdust in this blog post:
 * **Out-of-pocket expenses** are the medical expenses that you pay, including deductibles, copayments, and coinsurance.
-* Your **deductible** is how much you pay before your insurance jumps in and starts helping you out. Insurance companies typically present deductibles by year; if your annual deductible were $2000, you would pay the first $2000 in medical expenses you incur that year.
+* Your **deductible** is how much you pay before your insurance jumps in and starts helping you out. Insurance companies typically present deductibles by year; if your annual deductible were two thousand dollars, you would pay the first two thousand in medical expenses you incur that year.
 * You incur a **copayment/copay** when you get a medical procedure. Think of this as cash upfront—like $30 at the doctor's office after a checkup.
 * Your **coinsurance** is the percentage of medical costs you are responsible for.
 * Often, your insurance company will have **formularies**, which are lists of medications covered.
