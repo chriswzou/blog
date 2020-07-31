@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="{{ '/public/css/poole.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/public/css/syntax.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/public/css/lanyon.css' | absolute_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:wght@300&family=Source+Serif+Pro:wght@300;400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '../public/Favicon.png' | absolute_url }}">
@@ -45,5 +47,8 @@
     ga('create', '{{ site.google_analytics_id }}', 'auto');
     ga('send', 'pageview');
   </script>
+  {% endif %}
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  {% include analytics.html %}
   {% endif %}
 </head>

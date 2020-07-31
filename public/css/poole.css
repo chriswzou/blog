@@ -67,7 +67,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #2F9599;
   text-decoration: none;
 }
 a strong {
@@ -78,6 +78,65 @@ a:hover,
 a:focus {
   text-decoration: underline;
 }
+
+.fancy-underline {
+  text-decoration: none;
+  position: relative;
+  text-decoration: none;
+}
+
+.fancy-underline:hover {
+  text-decoration: none;
+}
+
+.fancy-underline::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2F9599;
+  visibility: hidden;
+  /*transform: scaleX(0);*/
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.fancy-underline:hover::before {
+  visibility: visible;
+  width: 100%;
+  /*transform: scaleX(1);*/
+}
+
+.fancy-underline-sidebar {
+  text-decoration: none;
+  position: relative;
+  text-decoration: none;
+}
+
+.fancy-underline-sidebar:hover {
+  text-decoration: none;
+}
+
+.fancy-underline-sidebar::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.fancy-underline-sidebar:hover::before {
+  visibility: visible;
+  width: 100%;
+  transform: scaleX(1);
+}
+
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {

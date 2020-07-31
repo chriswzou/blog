@@ -2,9 +2,6 @@
 layout: post
 title: Implementing and Optimizing Chemical Substructure Search Using MongoDB
 ---
-<div class="message">
-  This post is long and relatively technical.
-</div>
 ## Background
 Small molecule drug development often relies on establishing a group of **lead compounds**, previously known chemicals whose structures exhibit therapeutic potential. The idea is that once said potential is combined with a series of pharmacological improvements, the company will be able to easily manufacture and market the drug.
 
@@ -43,17 +40,16 @@ molDoc = {
 }
 
 
-def SubSearchNaive(pattern, db):
+def SubSearchNaive(pattern, mol_collection, chirality=False):
     """
-    Given a MongoDB database DB with a collection called molecules,
-    return a list of all molecules that contain PATTERN
+    Search MOL_COLLECTION for molecules with PATTERN
     as a substructure.
     """
     results = []
-    for molDoc in db.molecules.find():
+    for molDoc in mol_collection.find():
         rdmol = Chem.Mol(molDoc['rdmol'])
-        if rdmol.HasSubstructMatch(pattern):
-            results.append([molDoc['smiles']])
+        if rdmol.HasSubstructMatch(pattern, useChirality=chirality):
+            results.append(molDoc['smiles'])
     return results
 ```
 How performant is this approach? Since molecules are generally represented as graphs, the substructure check for each molecule is an instance of the subgraph isomorphism problem. Unfortunately, this problem is NP-complete. While the molecule graphs we're talking about won't usually exhibit worst-case time, benchmarks by Daylight Chemical Information Systems find that they still run on the order of $O(N^2)$ or $O(N^3)$. This would be incredibly time intensive for larger or more connected molecules, making this method slow for identifying lead compounds.
