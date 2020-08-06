@@ -15,3 +15,6 @@ _all times in PST_
 ### Useful links:
 - <a class="fancy-underline" href="https://oh.datastructur.es/">CS61BL queue</a>
 - <a class="fancy-underline" href="https://berkeley.zoom.us/j/4574261764">Zoom room</a>
+
+### Resources:
+- <a class="fancy-underline" href="https://docs.google.com/presentation/d/1IAWu6l33pWmzwvuv0KlX_SviVdG0X0La9XC8TJffFZA/edit?usp=sharing">MST Slides</a>
