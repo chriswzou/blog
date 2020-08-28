@@ -18,6 +18,7 @@
  * Contents
  *
  * Global resets
+ * Projects page
  * Masthead
  * Sidebar
  * Slide effect
@@ -52,6 +53,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #333;
   letter-spacing: -.025rem;
+}
+
+/* Projects Page Styling */
+.projects-tech-tag {
+  margin-right: 1rem;
+  width: 15%;
+  padding: 9px;
+  text-align: center;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid #ea7315;
+  color: #ea7315;
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+.projects-tech-tag:hover {
+  margin-right: 1rem;
+  padding: 9px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  background-color: #ea7315;
+  border-radius: 25px;
 }
 
 
