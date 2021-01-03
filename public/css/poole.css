@@ -67,7 +67,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #2F9599;
+  color: #df440b;
   text-decoration: none;
 }
 a strong {
@@ -96,7 +96,7 @@ a:focus {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2F9599;
+  background-color:#df440b;
   visibility: hidden;
   /*transform: scaleX(0);*/
   transition: all 0.2s ease-in-out 0s;

@@ -14,6 +14,10 @@ A static site built using [GatsbyJS](https://www.gatsbyjs.com/).
 __
 ## Academic
 I can't publish code for class projects, but I'd be happy to talk more about them if you have questions!
+
+### NumC - Fall 2020, CS61C
+An implementation of NumPy in C.
+
 ### Gitlet - Fall 2019, CS61B
 A version control system built in Java that supports most Git functionality (merge, rm, branches, etc.) and remote repositories.
 

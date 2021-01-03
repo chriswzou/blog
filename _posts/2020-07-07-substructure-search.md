@@ -52,7 +52,7 @@ def SubSearchNaive(pattern, mol_collection, chirality=False):
             results.append(molDoc['smiles'])
     return results
 ```
-How performant is this approach? Since molecules are generally represented as graphs, the substructure check for each molecule is an instance of the subgraph isomorphism problem. Unfortunately, this problem is NP-complete. While the molecule graphs we're talking about won't usually exhibit worst-case time, benchmarks by Daylight Chemical Information Systems find that they still run on the order of $O(N^2)$ or $O(N^3)$.
+How performant is this approach? Since molecules are generally represented as graphs, the substructure check for each molecule is an instance of the subgraph isomorphism problem. Unfortunately, this problem is NP-complete. While the molecule graphs we're talking about won't usually exhibit worst-case (exponential) time, benchmarks by Daylight Chemical Information Systems find that they still run on the order of $O(N^2)$ or $O(N^3)$.
 
 This is incredibly time consuming. For instance, the median query time on my MacBook Pro against a dataset of 100,000 molecules is around 16 seconds. When we consider that most chemical datasets number millions of molecules and that scientists will want to screen hundreds of molecules at a time, it is clear that we need to make some improvements.
 
@@ -116,7 +116,13 @@ def SubSearch(pattern, mol_collection, chirality=False):
             results.append(mol_doc['smiles'])
     return results
 ```
-With this approach, we reduce the median query time to 60 milliseconds. This is already below the [classical UI requirement](https://www.nngroup.com/articles/response-times-3-important-limits/) of 100ms for instantaneous response, so it'd serve well for a scientist testing patterns one by one. However, we're also interested in serving scientists screening many fragments at a time, and a 500 fragment screen would still take 30 seconds. Can we make this even faster?
+With this approach, we reduce the median query time to 60 milliseconds. This is already below the [classical UI requirement](https://www.nngroup.com/articles/response-times-3-important-limits/) of 100ms for instantaneous response, so it'd serve well for a scientist testing patterns one by one. 
 
-## Taking Advantage of MongoDB
-...more to come...
+## Taking Things Further
+While a 60 ms query time is great for individual searches, a 500-molecule screen might still take up to 30 seconds. Keeping in mind that scientists typically have great compute resources at their disposal, there are a couple of obvious next steps that I may explore in the future:
+1. In `SubSearch`, the for loop is embarrassingly parallel. Each iteration runs an entirely separate operation on a different data object. Python supports parallelizing for loops through the `multiprocessing` module.
+2. MongoDB supports "sharding" load over multiple servers. This would be the task of a database administrator and would be of great help with larger datasets, which would strain the working memory of machines like my Macbook.
+3. While the rdkit Pattern fingerprint is optimized for substructure searching, there are a number of other fingerprints usable for similar purposes; chemists may wish to perform similarity and identity searches as well. In practical use, `AddPatternFingerprints` might be just one part of a larger method that adds many fingerprints to molecule documents.
+
+## Wrapping Up
+This implementation is part of my Google Summer of Code project, an open-source contribution to RDKit. You can find the full [source code](https://github.com/rdkit/mongo-rdkit) here; I would welcome any and all contributions!
