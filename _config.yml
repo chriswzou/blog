@@ -2,8 +2,8 @@
 title:               Christopher Zou
 tagline:             student at UC Berkeley
 description:         a site for blogging, teaching, a portfolio, and thoughts given structure
-url:                 chriswzou.github.io
-baseurl:             /blog
+url:                 chriswzou.github.io/blog
+baseurl:             ''
 paginate:            5
 permalink:           pretty
 paginate_path:       /posts/page:num/
